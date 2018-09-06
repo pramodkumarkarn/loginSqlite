@@ -17,10 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".loginActivity" />
-        <activity
-            android:name=".homescreen"
-            android:label="@string/title_activity_homescreen"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".homescreen"></activity>
     </application>
 
 </manifest>
