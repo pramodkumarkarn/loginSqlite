@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void register(View view){
-        name = (EditText)findViewById(R.id.editText);
-        rollno = (EditText)findViewById(R.id.editText2);
-        pass = (EditText)findViewById(R.id.editText3);
+        name = findViewById(R.id.editText);
+        rollno = findViewById(R.id.editText2);
+        pass = findViewById(R.id.editText3);
         if (name.getText().toString().trim().length() < 3){
             Toast.makeText(getApplicationContext(),"Min 3 Characters Name", Toast.LENGTH_SHORT).show();
         }
