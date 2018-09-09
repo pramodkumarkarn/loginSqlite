@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
 
     EditText name,rollno,pass;
     Button button;
-    DBHandler dbHandler;
     String nameString;
     String rollString;
     String passString;
@@ -23,8 +22,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        dbHandler = new DBHandler();
-        dbHandler.create_table();
     }
 
     public void register(View view){
@@ -44,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             nameString = name.getText().toString();
             rollString = rollno.getText().toString();
             passString = pass.getText().toString();
-            dbHandler.putData(nameString,rollString,passString);
+//            dbHandler.putData(nameString,rollString,passString);
             name.setText("");
             rollno.setText("");
             pass.setText("");
